@@ -16,11 +16,11 @@ namespace App1
     {
         public CrossZerosVM()
         {
-            press = new Command(PressButton);
-            reset = new Command(Reset);
+            Press = new Command(PressButton);
+            Reset_ = new Command(Reset);
         }
-        public ICommand press { get; }
-        public ICommand reset { get; }
+        public ICommand Press { get; }
+        public ICommand Reset_ { get; }
         private string _b_00;
         public string B_00
         {
@@ -125,12 +125,20 @@ namespace App1
                             B_00 = "X";
                             isChoise = true;
                         }
+                        else
+                        {
+                            return;
+                        }
                         break;
                     case "_01":
                         if (string.IsNullOrEmpty(B_01))
                         {
                             B_01 = "X";
                             isChoise = true;
+                        }
+                        else
+                        {
+                            return;
                         }
                         break;
                     case "_02":
@@ -139,12 +147,20 @@ namespace App1
                             B_02 = "X";
                             isChoise = true;
                         }
+                        else
+                        {
+                            return;
+                        }
                         break;
                     case "_10":
                         if (string.IsNullOrEmpty(B_10))
                         {
                             B_10 = "X";
                             isChoise = true;
+                        }
+                        else
+                        {
+                            return;
                         }
                         break;
                     case "_11":
@@ -153,12 +169,20 @@ namespace App1
                             B_11 = "X";
                             isChoise = true;
                         }
+                        else
+                        {
+                            return;
+                        }
                         break;
                     case "_12":
                         if (string.IsNullOrEmpty(B_12))
                         {
                             B_12 = "X";
                             isChoise = true;
+                        }
+                        else
+                        {
+                            return;
                         }
                         break;
                     case "_20":
@@ -167,6 +191,10 @@ namespace App1
                             B_20 = "X";
                             isChoise = true;
                         }
+                        else
+                        {
+                            return;
+                        }
                         break;
                     case "_21":
                         if (string.IsNullOrEmpty(B_21))
@@ -174,12 +202,20 @@ namespace App1
                             B_21 = "X";
                             isChoise = true;
                         }
+                        else
+                        {
+                            return;
+                        }
                         break;
                     case "_22":
                         if (string.IsNullOrEmpty(B_22))
                         {
                             B_22 = "X";
                             isChoise = true;
+                        }
+                        else
+                        {
+                            return;
                         }
                         break;
                 }
@@ -264,7 +300,7 @@ namespace App1
             {
                 UserDialogs.Instance.ShowLoading("Loading", MaskType.Black);
             });
-            await Task.Delay(3000);
+            await Task.Delay(1500);
             while (!isZero)
             {
                 int point = r.Next(0, 8);

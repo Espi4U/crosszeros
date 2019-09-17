@@ -12,7 +12,6 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -25,15 +24,15 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Text="{Binding B_00}" Grid.Row="0" Grid.Column="0" Command="{Binding press}" CommandParameter="_00"/>
-        <Button Text="{Binding B_01}" Grid.Row="0" Grid.Column="1" Command="{Binding press}" CommandParameter="_01"/>
-        <Button Text="{Binding B_02}" Grid.Row="0" Grid.Column="2" Command="{Binding press}" CommandParameter="_02"/>
-        <Button Text="{Binding B_10}" Grid.Row="1" Grid.Column="0" Command="{Binding press}" CommandParameter="_10"/>
-        <Button Text="{Binding B_11}" Grid.Row="1" Grid.Column="1" Command="{Binding press}" CommandParameter="_11"/>
-        <Button Text="{Binding B_12}" Grid.Row="1" Grid.Column="2" Command="{Binding press}" CommandParameter="_12"/>
-        <Button Text="{Binding B_20}" Grid.Row="2" Grid.Column="0" Command="{Binding press}" CommandParameter="_20"/>
-        <Button Text="{Binding B_21}" Grid.Row="2" Grid.Column="1" Command="{Binding press}" CommandParameter="_21"/>
-        <Button Text="{Binding B_22}" Grid.Row="2" Grid.Column="2" Command="{Binding press}" CommandParameter="_22"/>
-        <Button Text="Reset" Command="{Binding reset}" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3"/>
+        <Button Text="{Binding B_00}" Grid.Row="0" Grid.Column="0" Command="{Binding Press}" CommandParameter="_00"/>
+        <Button Text="{Binding B_01}" Grid.Row="0" Grid.Column="1" Command="{Binding Press}" CommandParameter="_01"/>
+        <Button Text="{Binding B_02}" Grid.Row="0" Grid.Column="2" Command="{Binding Press}" CommandParameter="_02"/>
+        <Button Text="{Binding B_10}" Grid.Row="1" Grid.Column="0" Command="{Binding Press}" CommandParameter="_10"/>
+        <Button Text="{Binding B_11}" Grid.Row="1" Grid.Column="1" Command="{Binding Press}" CommandParameter="_11"/>
+        <Button Text="{Binding B_12}" Grid.Row="1" Grid.Column="2" Command="{Binding Press}" CommandParameter="_12"/>
+        <Button Text="{Binding B_20}" Grid.Row="2" Grid.Column="0" Command="{Binding Press}" CommandParameter="_20"/>
+        <Button Text="{Binding B_21}" Grid.Row="2" Grid.Column="1" Command="{Binding Press}" CommandParameter="_21"/>
+        <Button Text="{Binding B_22}" Grid.Row="2" Grid.Column="2" Command="{Binding Press}" CommandParameter="_22"/>
+        <Button Text="Reset" Command="{Binding Reset_}" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3"/>
     </Grid>
 </ContentPage>
