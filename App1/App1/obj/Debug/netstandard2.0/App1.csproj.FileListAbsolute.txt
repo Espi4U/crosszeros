@@ -11,3 +11,4 @@ C:\Users\Stefan\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.dll
 C:\Users\Stefan\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
 C:\Users\Stefan\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\App1.pdb
 C:\Users\Stefan\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Stefan\source\repos\App1\App1\App1\obj\Debug\netstandard2.0\Start.xaml.g.cs

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using Xamarin.Forms;
 
 namespace App1
@@ -14,10 +8,10 @@ namespace App1
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        public MainPage(string i, string u)
         {          
             InitializeComponent();
-            BindingContext = new CrossZerosVM();
+            BindingContext = new CrossZerosVM(i,u);
         }
     }
 }
