@@ -224,7 +224,10 @@ namespace App1
                 string.IsNullOrEmpty(B_10) || string.IsNullOrEmpty(B_11) || string.IsNullOrEmpty(B_12) ||
                 string.IsNullOrEmpty(B_20) || string.IsNullOrEmpty(B_21) || string.IsNullOrEmpty(B_22))
             {
-                SetRandomZero();
+                if (!SearchWinner())
+                {
+                    SetRandomZero();
+                }
             }
             else
             {
@@ -238,7 +241,7 @@ namespace App1
             B_10 = ""; B_11 = ""; B_12 = "";
             B_20 = ""; B_21 = ""; B_22 = "";
         }
-        public void SearchWinner()
+        public bool SearchWinner()
         {
             string[] colums =
             {
@@ -264,33 +267,40 @@ namespace App1
                 {
                     UserDialogs.Instance.Alert("Переможець Х", "Кінець гри");
                     Reset();
+                    return true;
                 }
                 else if (rows[i].Where(x => x == 'O').Count() == 3)
                 {
                     UserDialogs.Instance.Alert("Переможець О", "Кінець гри");
                     Reset();
+                    return true;
                 }
                 if (colums[i].Where(x => x == 'X').Count() == 3)
                 {
                     UserDialogs.Instance.Alert("Переможець Х", "Кінець гри");
                     Reset();
+                    return true;
                 }
                 else if (colums[i].Where(x => x == 'O').Count() == 3)
                 {
                     UserDialogs.Instance.Alert("Переможець О", "Кінець гри");
                     Reset();
+                    return true;
                 }
                 if (diags[i].Where(x => x == 'X').Count() == 3)
                 {
                     UserDialogs.Instance.Alert("Переможець Х", "Кінець гри");
                     Reset();
+                    return true;
                 }
                 else if (diags[i].Where(x => x == 'O').Count() == 3)
                 {
                     UserDialogs.Instance.Alert("Переможець О", "Кінець гри");
                     Reset();
+                    return true;
                 }
             }
+            return false;
         }
         public async void SetRandomZero()
         {

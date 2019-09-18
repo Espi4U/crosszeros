@@ -1979,6 +1979,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "Acr.UserDialogs >= 7.0.27",
       "App1 >= 1.0.0",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
       "Xamarin.Essentials >= 1.2.0",
@@ -1986,24 +1987,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Stefan\\.nuget\\packages\\": {},
+    "C:\\Users\\Espi4U\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stefan\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
+      "projectUniqueName": "D:\\CSNEW\\CrossZeros\\crosszeros\\App1\\App1.Android\\App1.Android.csproj",
       "projectName": "App1.Android",
-      "projectPath": "C:\\Users\\Stefan\\source\\repos\\App1\\App1\\App1.Android\\App1.Android.csproj",
-      "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stefan\\source\\repos\\App1\\App1\\App1.Android\\obj\\",
+      "projectPath": "D:\\CSNEW\\CrossZeros\\crosszeros\\App1\\App1.Android\\App1.Android.csproj",
+      "packagesPath": "C:\\Users\\Espi4U\\.nuget\\packages\\",
+      "outputPath": "D:\\CSNEW\\CrossZeros\\crosszeros\\App1\\App1.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Espi4U\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2017,8 +2018,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Stefan\\source\\repos\\App1\\App1\\App1\\App1.csproj": {
-              "projectPath": "C:\\Users\\Stefan\\source\\repos\\App1\\App1\\App1\\App1.csproj"
+            "D:\\CSNEW\\CrossZeros\\crosszeros\\App1\\App1\\App1.csproj": {
+              "projectPath": "D:\\CSNEW\\CrossZeros\\crosszeros\\App1\\App1\\App1.csproj"
             }
           }
         }
@@ -2027,6 +2028,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "Acr.UserDialogs": {
+            "target": "Package",
+            "version": "[7.0.27, )"
+          },
           "Xamarin.Android.Support.Core.Utils": {
             "target": "Package",
             "version": "[28.0.0.1, )"
