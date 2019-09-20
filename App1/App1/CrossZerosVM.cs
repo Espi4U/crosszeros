@@ -390,6 +390,7 @@ namespace App1
                         break;
                 }
             }
+            SearchWinner();
         }
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propName)
